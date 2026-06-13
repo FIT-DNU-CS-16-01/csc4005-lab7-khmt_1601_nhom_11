@@ -32,6 +32,7 @@ def main() -> None:
         model_input=str(input_path),
         model_output=str(output_path),
         weight_type=weight_type,
+        nodes_to_exclude=['node_conv2d_quant', 'Conv'],
     )
 
     report = {
